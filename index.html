@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- SWIPER JS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 
 </head>
 <body>
@@ -113,7 +116,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi deserunt facilis dolorum ad eveniet!
                 </p>
-                <a href="courses.html" class="btn btn-primary">Lean More</a>
+                <a href="courses.html" class="btn btn-primary">Learn More</a>
             </div>
         </article>
         <article class="course">
@@ -125,7 +128,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi deserunt facilis dolorum ad eveniet!
                 </p>
-                <a href="courses.html" class="btn btn-primary">Lean More</a>
+                <a href="courses.html" class="btn btn-primary">Learn More</a>
             </div>
         </article>
         <article class="course">
@@ -137,7 +140,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi deserunt facilis dolorum ad eveniet!
                 </p>
-                <a href="courses.html" class="btn btn-primary">Lean More</a>
+                <a href="courses.html" class="btn btn-primary">Learn More</a>
             </div>
         </article>
     </div>
@@ -228,16 +231,72 @@
 <!-- ====================== END OF FAQS =========================== -->
 
 
-<section class="container testimonials_Container">
+<section class="container testimonials_container mySwiper">
     <h2> Student's Testimonials</h2>
-    <div class="">
-        <article class="testimonial">
+    <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
             <div class="avatar">
-                <img src="" alt="">
+                <img src="./Images/Person6.jpg" alt="">
             </div>
             <div class="testimonial_info">
                 <h5>Diana Ayi</h5>
-                <small>Student</small>
+                <small>Cloud Architect</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, dolores rerum doloribus provident nam aperiam error ab ut non ad.
+                </p>
+            </div>
+        </article>
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./Images/Person2.jpg" alt="">
+            </div>
+            <div class="testimonial_info">
+                <h5>Mike</h5>
+                <small>Web Developer</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, dolores rerum doloribus provident nam aperiam error ab ut non ad.
+                </p>
+            </div>
+        </article>
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./Images/Person3.jpg" alt="">
+            </div>
+            <div class="testimonial_info">
+                <h5>Clara</h5>
+                <small>Devops Engineer </small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, dolores rerum doloribus provident nam aperiam error ab ut non ad.
+                </p>
+            </div>
+        </article>
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./Images/Person7.jpg" alt="">
+            </div>
+            <div class="testimonial_info">
+                <h5>Harry</h5>
+                <small>Blockachain Developer</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, dolores rerum doloribus provident nam aperiam error ab ut non ad.
+                </p>
+            </div>
+        </article>
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./Images/Person5.jpg" alt="">
+            </div>
+            <div class="testimonial_info">
+                <h5>Steve </h5>
+                <small>Cyber Security Analyst</small>
             </div>
             <div class="testimonial_body">
                 <p>
@@ -246,12 +305,24 @@
             </div>
         </article>
     </div>
-
+    <div class="swiper-pagination"></div>
 </section>
 
 
 
+
+<script>
+    var swiper = new Swiper(".mySwiper",{
+        slidesPerview:3,
+        spaceBetwwen:30,
+        pagination:{
+            el:".swiper-pagonation",
+            clickable:true,
+        },
+    });
+</script>
 <script src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     
 </body>
